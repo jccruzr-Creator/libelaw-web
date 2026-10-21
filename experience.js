@@ -42,6 +42,7 @@
   renderServices();
   const openDialog = (selector, id) => document.querySelectorAll(selector).forEach(button => button.addEventListener('click', () => document.getElementById(id).showModal()));
   openDialog('[data-open-philosophy]', 'philosophy-dialog');
+  openDialog('[data-open-mission-vision]', 'mission-vision-dialog');
   openDialog('[data-open-terms]', 'terms-dialog');
   openDialog('[data-open-cookies]', 'cookies-dialog');
   openDialog('[data-open-complaints]', 'complaints-dialog');
@@ -73,4 +74,3 @@
     links.forEach(link => { const section = document.querySelector(link.hash); if (section) observer.observe(section); });
   }
 })();
-

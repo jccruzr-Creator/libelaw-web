@@ -106,4 +106,18 @@ img.portrait-mark{width:19px;height:auto;aspect-ratio:119/221;object-fit:contain
 .philosophy-method{padding-left:20px;color:var(--muted);font-size:.85rem;line-height:1.7}.philosophy-method li{margin-top:8px}.philosophy-method strong{color:var(--navy)}
 @media(prefers-reduced-motion:no-preference){.site-header .wordmark:hover .logo-segment-1,.site-header .wordmark:focus-visible .logo-segment-1{animation-delay:0ms}.site-header .wordmark:hover .logo-segment-2,.site-header .wordmark:focus-visible .logo-segment-2{animation-delay:80ms}.site-header .wordmark:hover .logo-segment-3,.site-header .wordmark:focus-visible .logo-segment-3{animation-delay:160ms}#philosophy-dialog[open] .philosophy-mark{opacity:0}#philosophy-dialog[open] .assembly-part{opacity:1;animation:logo-assemble .7s cubic-bezier(.2,.8,.2,1) both}#philosophy-dialog[open] .assembly-top{--offset:-32px;animation-delay:0ms}#philosophy-dialog[open] .assembly-middle{--offset:32px;animation-delay:130ms}#philosophy-dialog[open] .assembly-bottom{--offset:40px;animation-delay:260ms}}
 @media(prefers-reduced-motion:reduce){.site-header .wordmark .brand-symbol{overflow:hidden}.philosophy-assembly .assembly-part{display:none}}
-
+.founder-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 26px;margin-top:20px}
+.founder-actions .light-link{margin-top:0}
+.founder-values-trigger{display:inline-flex;align-items:center;gap:12px;min-height:42px;padding:8px 0;background:transparent;border:0;border-bottom:1px solid #d4b879;color:#f7f4ed;font:600 .78rem/1.4 var(--sans);text-align:left;cursor:pointer;transition:color .2s,border-color .2s}
+.founder-values-trigger:hover,.founder-values-trigger:focus-visible{color:#f0cf87;border-color:#f0cf87}
+.mission-vision-dialog{max-width:760px;width:min(760px,calc(100% - 32px))}
+.mission-vision-dialog h2{margin-bottom:26px}
+.mission-vision-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.mission-vision-card{background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold);padding:27px}
+.mission-vision-card:last-child{border-top-color:var(--wine)}
+.mission-vision-index{font:700 .6rem/1.4 var(--sans);letter-spacing:.16em;color:var(--wine)}
+.mission-vision-card h3{font:400 1.7rem/1.2 var(--serif);color:var(--navy);margin:14px 0 12px}
+.mission-vision-card p{font-size:.88rem;line-height:1.7;color:var(--muted);margin:0}
+@media(max-width:600px){.mission-vision-grid{grid-template-columns:1fr}.mission-vision-card{padding:22px}}
+@media(prefers-reduced-motion:no-preference){.mission-vision-dialog[open] .mission-vision-card{animation:mission-enter .35s ease both}.mission-vision-dialog[open] .mission-vision-card:last-child{animation-delay:.08s}}
+@keyframes mission-enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}

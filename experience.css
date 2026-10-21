@@ -92,4 +92,18 @@ img.portrait-mark{width:19px;height:auto;aspect-ratio:119/221;object-fit:contain
 @media(max-width:1050px){.site-footer .footer-top{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.audience-inner{display:block}.audience-inner h2{margin-bottom:10px}.audience-inner ul{gap:5px 16px}.audience-inner li:before{margin-right:7px}.site-footer .footer-top{grid-template-columns:repeat(2,1fr)}.site-footer .footer-top>div:first-child{grid-column:1/-1}}
 @media(max-width:480px){.site-footer .footer-top{grid-template-columns:1fr}.site-footer .footer-top>div:first-child{grid-column:auto}}
+.site-footer .official-logo{display:inline-block;background:#faf8f3;border-radius:4px;padding:9px 13px;line-height:0;box-shadow:0 8px 24px #001c3b28}
+.site-footer .official-logo img{width:145px;height:auto;mix-blend-mode:multiply;filter:none;opacity:1}
+.site-header .wordmark .brand-symbol{width:34px;overflow:visible}
+.site-header .brand-symbol>img{display:block;transition:opacity .12s}
+.site-header .wordmark .logo-segment{z-index:2}
+.philosophy-assembly{position:relative;width:69px;height:128px;margin:16px auto 20px;line-height:0}
+.philosophy-assembly .philosophy-mark{display:block;width:100%;height:100%;margin:0;object-fit:contain}
+.assembly-part{position:absolute;inset:0;background:url('isotipo.png') center/100% 100% no-repeat;opacity:0;pointer-events:none}
+.assembly-top{clip-path:inset(0 0 57% 0)}.assembly-middle{clip-path:inset(40% 0 27% 0)}.assembly-bottom{clip-path:inset(70% 0 0 0)}
+#philosophy-dialog h3{font:400 1.4rem/1.2 var(--serif);margin-top:24px;color:var(--navy)}
+.brand-colors{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:13px;font-size:.8rem}.brand-colors span{display:inline-flex;align-items:center;gap:7px}.brand-colors i{display:inline-block;width:14px;height:14px;border-radius:50%}.swatch-blue{background:#092e77}.swatch-red{background:#a30e17}.swatch-yellow{background:#f6ad1b}
+.philosophy-method{padding-left:20px;color:var(--muted);font-size:.85rem;line-height:1.7}.philosophy-method li{margin-top:8px}.philosophy-method strong{color:var(--navy)}
+@media(prefers-reduced-motion:no-preference){.site-header .wordmark:hover .logo-segment-1,.site-header .wordmark:focus-visible .logo-segment-1{animation-delay:0ms}.site-header .wordmark:hover .logo-segment-2,.site-header .wordmark:focus-visible .logo-segment-2{animation-delay:80ms}.site-header .wordmark:hover .logo-segment-3,.site-header .wordmark:focus-visible .logo-segment-3{animation-delay:160ms}#philosophy-dialog[open] .philosophy-mark{opacity:0}#philosophy-dialog[open] .assembly-part{opacity:1;animation:logo-assemble .7s cubic-bezier(.2,.8,.2,1) both}#philosophy-dialog[open] .assembly-top{--offset:-32px;animation-delay:0ms}#philosophy-dialog[open] .assembly-middle{--offset:32px;animation-delay:130ms}#philosophy-dialog[open] .assembly-bottom{--offset:40px;animation-delay:260ms}}
+@media(prefers-reduced-motion:reduce){.site-header .wordmark .brand-symbol{overflow:hidden}.philosophy-assembly .assembly-part{display:none}}
 
